@@ -6,8 +6,8 @@
 
 
 ### Live site Link:
-### Client side code Link:
-### Server-side code Link:
+### Client side code Link: 
+### Server-side code Link: https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-Hilful
 
 
 * FoodMami Website banner shows most trending restaurant list form where users can easily order the most wanted items on the fly.
