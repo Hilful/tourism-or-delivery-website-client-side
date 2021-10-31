@@ -1,6 +1,6 @@
 .home-banner{
     background-image: url('../../../Image/bannar.jpg');
-    background-position: center ;
+    background-position: center right;
     background-repeat: no-repeat;
     color: aliceblue;
 }
@@ -10,20 +10,40 @@
     margin-bottom: 40px;
     text-align: left;
 }
+
 .restaurant img{
     float: left;
     margin-right:5px;
-    margin-bottom: 2px;
     height: 120px;
     width: 120px;
+    margin-top: 3px;
 }
-
 .restaurant img:hover{
-        transform: scale(1.5);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.banner{
+    margin-bottom: 400px;
+}
+.banner img{
+    height: 400px;
+    width: 400px;
+    
+
+}
+.orderbtn{
+    margin-right:16px
+}
+.order-banner-left{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.order-banner{
+    margin: 10px;
 }
 .service-container{
-    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
@@ -39,7 +59,4 @@
     .service-container{
         grid-template-columns: repeat(2, 1fr);
     }
-}
-.service-section{
-    margin-top: 20px;
 }

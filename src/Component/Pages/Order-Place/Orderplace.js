@@ -7,7 +7,7 @@ const Orderplace = () => {
     const { register, handleSubmit,reset} = useForm();
     const onSubmit = data => {
       console.log(data);
-      axios.post('http://localhost:5000/offers',data)
+      axios.post('https://frightening-ghost-27691.herokuapp.com/offers',data)
       .then(res=>{
          if(res.data.insertedId){
              alert('added successfully')

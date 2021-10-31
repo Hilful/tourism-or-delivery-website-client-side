@@ -7,12 +7,12 @@ import res4 from '../../../Image/077.jpg'
 import res5 from '../../../Image/088.jpg'
 import res6 from '../../../Image/downtown.jpg'
 import video from '../../../video/Motorbike delivery food in Kuwait.mkv'
-import { map } from '@firebase/util';
+import banner from '../../../Image/banner2.png'
 import Service from '../Service/Service';
 const Home = () => {
     const [offers, setOffers] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/offers')
+        fetch('https://frightening-ghost-27691.herokuapp.com/offers')
             .then(res => res.json())
             .then(data => setOffers(data));
     }, [])
@@ -45,6 +45,19 @@ const Home = () => {
                 {
                     offers.map(offers => <Service key={offers._id} offers={offers}/>)
                 }
+                </div>
+            </div>
+            <div className="row order-banner">
+                <div className="col order-banner-left">
+                
+                <h1>Place your order NOW and get your delivery super fast!!!</h1>
+                    <p>Scroll and order now!!! – the restaurants and shops you love. Eat the foods you love , and share it with your loved ones. Hurray UP!!! We are waiting!!!.</p>
+                <button className="btn btn-warning orderbtn" >Order now</button>
+                
+                <button className="btn btn-dark">Search</button>
+                </div>
+                <div className="col banner">
+                   <img src={banner} alt="" />
                 </div>
             </div>
             <div>

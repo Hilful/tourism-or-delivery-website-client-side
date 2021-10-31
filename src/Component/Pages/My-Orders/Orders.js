@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
 
 const Orders = () => {
+    const { offersId } = useParams();
+    const [offers,setOffers]=useState({})
+    useEffect (()=>{
+        fetch(`https://frightening-ghost-27691.herokuapp.com/offers/${offersId}`)
+        .then(res=>res.json())
+        .then(data =>setOffers(data))
+    },[])
     return (
         <div>
-            <h1>this is my Orders</h1>
+            <div>
+                <h2> of:{offers.name}</h2>
+            <h2>Ordered: {offersId}</h2>
+        </div>
         </div>
     );
 };
