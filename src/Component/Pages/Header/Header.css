@@ -1,0 +1,15 @@
+.header img{
+    height: 100px;
+    width: 130px;
+}
+.header{
+    color: cyan;
+    
+}
+span{
+    margin-top: 9px;
+    margin-left: 2px;
+}
+.title{
+    color: whitesmoke;
+}

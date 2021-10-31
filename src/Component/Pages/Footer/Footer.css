@@ -1,0 +1,18 @@
+.footer-body img{
+    height: 40px;
+    width: 40px;
+}
+.footer-body{
+    
+    margin-left: 300px;
+    padding: 90px 0 50px;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(202, 199, 199);
+    margin: auto;
+}
+.col{
+    text-align: center;
+   
+
+}
